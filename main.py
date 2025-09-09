@@ -1,5 +1,5 @@
-person = dict([('name', 'bogdan'), ('age', 24)])
-person = dict(name='bogdan', age=23)
-person[True] = False
+pairs = ['name:max', 'age:10']
 
-print(person.keys())
+my_dict = {i.split(':')[0]: i.split(':')[1]for i in pairs}
+
+print(my_dict)
